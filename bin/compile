@@ -45,8 +45,7 @@ topic "Updating apt caches"
 apt-get $APT_OPTIONS update | indent
 
 # jajal install piton
-apt-get install python
-echo "bismillah"
+apt-get install nano -y
 
 for PACKAGE in $PACKAGES; do
   if [[ $PACKAGE == *deb ]]; then
